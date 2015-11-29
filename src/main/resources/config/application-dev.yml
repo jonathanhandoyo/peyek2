@@ -23,7 +23,7 @@ spring:
         url: jdbc:postgresql://localhost:5432/peyek
         name:
         username: peyek
-        password:
+        password: peyek
     jpa:
         database-platform: io.gof.peyek.domain.util.FixedPostgreSQL82Dialect
         database: POSTGRESQL
