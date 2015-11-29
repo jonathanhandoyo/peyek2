@@ -1,0 +1,65 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "activity",
+            "otherEntityName": "activity",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "project"
+        },
+        {
+            "relationshipId": 2,
+            "relationshipName": "bidder",
+            "otherEntityName": "contractor",
+            "relationshipType": "many-to-many",
+            "otherEntityField": "name",
+            "ownerSide": true
+        },
+        {
+            "relationshipId": 3,
+            "relationshipName": "contractor",
+            "otherEntityName": "contractor",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "name"
+        },
+        {
+            "relationshipId": 4,
+            "relationshipName": "document",
+            "otherEntityName": "document",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "project"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "50"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "description",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "200"
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "content",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "5000"
+        }
+    ],
+    "changelogDate": "20151129090926",
+    "dto": "no",
+    "pagination": "pagination"
+}

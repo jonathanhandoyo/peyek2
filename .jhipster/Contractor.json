@@ -1,0 +1,49 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "document",
+            "otherEntityName": "document",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "contractor"
+        },
+        {
+            "relationshipId": 2,
+            "relationshipName": "project",
+            "otherEntityName": "project",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "contractor"
+        },
+        {
+            "relationshipId": 3,
+            "relationshipName": "bidding",
+            "otherEntityName": "project",
+            "relationshipType": "many-to-many",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "bidder"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "50"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "address",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "50"
+        }
+    ],
+    "changelogDate": "20151129090720",
+    "dto": "no",
+    "pagination": "pagination"
+}
