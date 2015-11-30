@@ -1,0 +1,43 @@
+<div class="widget projects-widget">
+
+    <div class="widget-head br-green">
+        <h3><i class="fa fa-list-ul"></i> Projects</h3>
+    </div>
+
+    <div class="widget-body no-padd">
+
+        <ul class="list-unstyled">
+
+            <li ng-repeat="project in projects track by $index">
+                <p>
+                    <!-- Project icon -->
+                    <i class="fa {{project.icon}}" style="font-size: 14px;"></i>
+                    <!-- Name -->
+                    <strong>{{project.name}}</strong>
+                </p>
+
+                <p class="p-meta">
+                    <!-- Due date & % Completed -->
+                    <span>Due : {{project.dueDate}} - {{project.completeness}}% Done</span>
+                </p>
+
+                <!-- Progress bar -->
+                <div class="progress">
+                    <div class="progress-bar progress-bar-{{!project.state || project.state === 'normal' ? 'info' : project.state}}"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" ng-style="{'width' : project.completeness + '%'}">
+                        <span class="sr-only">{{project.completeness}}% Complete</span>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <div class="widget-foot">
+        <span class="pull-left"><i class="fa fa-time"></i> Last Update - 55 mins ago</span>
+        <a href="#" class="btn btn-success btn-xs pull-right">Refresh</a>
+        <div class="clearfix"></div>
+    </div>
+
+</div>
