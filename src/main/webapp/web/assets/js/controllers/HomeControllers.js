@@ -19,6 +19,9 @@ angular.module('mainApp')
             value:79
         };
 
+        /* ****************************************** */
+        /* Comments Examples */
+        /* ****************************************** */
         $scope.comments = [
             {
                 time: '1 minute ago',
