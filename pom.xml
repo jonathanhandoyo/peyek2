@@ -704,7 +704,8 @@
                                     <goal>build</goal>
                                 </goals>
                                 <configuration>
-                                    <buildTool>gulp</buildTool>
+                                    <buildTool>grunt</buildTool>
+                                    <buildArgs>build --force --no-color</buildArgs>
                                 </configuration>
                             </execution>
                         </executions>
