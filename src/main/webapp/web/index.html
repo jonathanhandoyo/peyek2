@@ -22,6 +22,9 @@
 		<!-- Custom CSS -->
 		<link href="assets/css/style.css" rel="stylesheet">
 
+        <!-- Timeline -->
+        <link href="assets/css/timeline.css" rel="stylesheet">
+
 		<!-- Favicon -->
 		<link rel="shortcut icon" href="#">
 	</head>
@@ -31,11 +34,23 @@
 		<div class="outer">
 
 			<!-- Sidebar starts -->
-                <div ui-view="sideBar" ng-cloak=""></div>
+            <div class="sidebar">
+                <div ui-view="sidebar" ng-cloak=""></div>
+            </div>
 			<!-- Sidebar ends -->
 
 			<!-- Mainbar starts -->
-			    <div ui-view="home" ng-cloak=""></div>
+            <div class="mainbar">
+
+                <div class="main-head">
+                    <div ui-view="header" ng-cloak=""></div>
+                </div>
+
+                <div class="main-content">
+                    <div ui-view="home" ng-cloak=""></div>
+                </div>
+
+            </div>
 			<!-- Mainbar ends -->
 
 			<div class="clearfix"></div>
@@ -57,6 +72,7 @@
 
         <!--AngularJS-->
         <script src="../bower_components/angular/angular.js"></script>
+        <script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
         <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
         <script src="../bower_components/angular-cache-buster/angular-cache-buster.js"></script>
         <script src="../bower_components/angular-aria/angular-aria.js"></script>
@@ -110,8 +126,9 @@
         <script src="assets/js/directives/inputs.directive.js"></script>
         <script src="assets/js/directives/decorations.directive.js"></script>
         <script src="assets/js/directives/widgets.directive.js"></script>
-        <script src="assets/js/controllers/HomeControllers.js"></script>
+        <script src="assets/js/controllers/HeaderController.js"></script>
         <script src="assets/js/controllers/SidebarController.js"></script>
+        <script src="assets/js/controllers/HomeControllers.js"></script>
 
 		<!-- Javascript for this page -->
         <script type="text/javascript"></script>

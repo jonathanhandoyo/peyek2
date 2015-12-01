@@ -107,4 +107,61 @@ angular.module('mainApp')
             }
         ];
 
+        /* ****************************************** */
+        /* Timeline Examples */
+        /* ****************************************** */
+        $scope.milestones = [
+            {
+               date: 'Dec 01 2015',
+               highlight: 'This project is launched',
+               content: 'Lorem ipsum dolor sit amet consiquest dio',
+               album: {
+                   items: [
+                       {
+                           src: 'http://thevectorlab.net/flatlab/img/sm-img-1.jpg'
+                       },
+                       {
+                           src: 'http://thevectorlab.net/flatlab/img/sm-img-2.jpg'
+                       },
+                       {
+                           src: 'http://thevectorlab.net/flatlab/img/sm-img-3.jpg'
+                       }
+                   ]
+               }
+            },
+            {
+                date: 'Dec 02 2015',
+                highlight: 'Project failure',
+                content: '<a href="#">Jonathan Handoyo</a> completes all the tasks <span><a href="#" class="blue">PARTY TIME</a></span>',
+                album: {
+                    items: [
+                        {
+                            src: 'http://thevectorlab.net/flatlab/img/sm-img-1.jpg'
+                        },
+                        {
+                            src: 'http://thevectorlab.net/flatlab/img/sm-img-2.jpg'
+                        },
+                        {
+                            src: 'http://thevectorlab.net/flatlab/img/sm-img-3.jpg'
+                        }
+                    ]
+                },
+                notifications: [
+                    {
+                        text: 'First notification'
+                    }
+                ]
+            },
+            {
+                date: 'Dec 03 2015',
+                highlight: 'Project successful',
+                content: 'Lorem ipsum dolor sit amet consiquest dio',
+                notifications: [
+                    {
+                        text: 'New task added for <a href="#">Wira Siwananda</a>'
+                    }
+                ]
+            }
+        ];
+
     });

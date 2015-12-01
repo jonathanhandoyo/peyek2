@@ -1,4 +1,4 @@
-var main_app = angular.module('mainApp', ['ui.router', 'ngCacheBuster', 'ngAria'])
+var main_app = angular.module('mainApp', ['ngSanitize', 'ui.router', 'ngCacheBuster', 'ngAria'])
     .config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locationProvider,  httpRequestInterceptorCacheBusterProvider, AlertServiceProvider) {
         // comment below to make alerts doesn't look like toast
         AlertServiceProvider.showAsToast(true);
@@ -13,9 +13,13 @@ var main_app = angular.module('mainApp', ['ui.router', 'ngCacheBuster', 'ngAria'
         $stateProvider.state('site', {
             'abstract': true,
             views: {
-                'sideBar@': {
+                'sidebar@': {
                     templateUrl: 'components/side-bar.html',
                     controller: 'SidebarController'
+                },
+                'header@': {
+                    templateUrl: 'components/header.html',
+                    controller: 'HeaderController'
                 }
             }
         }).state('home', {
