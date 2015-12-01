@@ -113,7 +113,7 @@ angular.module('mainApp')
         $scope.milestones = [
             {
                date: 'Dec 01 2015',
-               highlight: 'This project is launched',
+               title: 'This project is launched',
                content: 'Lorem ipsum dolor sit amet consiquest dio',
                album: {
                    items: [
@@ -131,7 +131,7 @@ angular.module('mainApp')
             },
             {
                 date: 'Dec 02 2015',
-                highlight: 'Project failure',
+                title: 'Project failure',
                 content: '<a href="#">Jonathan Handoyo</a> completes all the tasks <span><a href="#" class="blue">PARTY TIME</a></span>',
                 album: {
                     items: [
@@ -146,7 +146,7 @@ angular.module('mainApp')
                         }
                     ]
                 },
-                notifications: [
+                highlights: [
                     {
                         text: 'First notification'
                     }
@@ -154,9 +154,9 @@ angular.module('mainApp')
             },
             {
                 date: 'Dec 03 2015',
-                highlight: 'Project successful',
+                title: 'Project successful',
                 content: 'Lorem ipsum dolor sit amet consiquest dio',
-                notifications: [
+                highlights: [
                     {
                         text: 'New task added for <a href="#">Wira Siwananda</a>'
                     }

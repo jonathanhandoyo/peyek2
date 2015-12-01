@@ -75,7 +75,7 @@ angular.module('mainApp')
     * milestones:  [
     *   {
     *       date: string,
-    *       highlight: string,
+    *       title: string,
     *       content: richText,
     *       album: {
     *           items: [
@@ -84,7 +84,7 @@ angular.module('mainApp')
     *               }
     *           ]
     *       },
-    *       notifications: [
+    *       highlights: [
     *           {
     *               text: richText
     *           }

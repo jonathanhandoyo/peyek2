@@ -13,11 +13,11 @@
                             <span ng-class-odd="'arrow'" ng-class-even="'arrow-alt'"></span>
                             <span class="timeline-icon blue"></span>
                             <span class="timeline-date">{{milestone.date}}</span>
-                            <h1 class="blue">{{milestone.highlight}}</h1>
+                            <h1 class="blue">{{milestone.title}}</h1>
                             <p ng-bind-html="milestone.content"></p>
-                            <div ng-if="milestone.notifications" class="clearfix">
-                                <div ng-repeat="notification in milestone.notifications" class="notification">
-                                    <i class=" fa fa-exclamation-sign"></i> <span ng-bind-html="notification.text"></span>
+                            <div ng-if="milestone.highlights" class="clearfix">
+                                <div ng-repeat="highlight in milestone.highlights" class="notification">
+                                    <i class=" fa fa-exclamation-sign"></i> <span ng-bind-html="highlight.text"></span>
                                 </div>
                             </div>
                             <div class="clearfix">
