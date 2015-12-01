@@ -103,7 +103,11 @@ angular.module('mainApp')
                 milestones: '='
             },
             link: function(scope, element, attrs){
-
+                scope.afterImageRendered = function (elm){
+                    jQuery('.prettyphoto').prettyPhoto({
+                        overlay_gallery: false, social_tools: false
+                    });
+                };
             }
         }
     })

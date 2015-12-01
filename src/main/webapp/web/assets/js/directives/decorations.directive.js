@@ -15,4 +15,15 @@ angular.module('mainApp')
                 });
             }
         }
-    });
+    })
+
+    .directive('afterRender', ['$timeout', function ($timeout) {
+        return {
+            restrict: 'A',
+            terminal: true,
+            transclude: true,
+            link: function (scope, element, attrs) {
+                $timeout(scope.$eval(attrs.afterRender), 0, true, element);  //Calling a scoped method
+            }
+        };
+    }]);
