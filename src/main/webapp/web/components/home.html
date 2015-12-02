@@ -1,5 +1,130 @@
 <div class="container">
 
+    <div class="knobs text-center">
+        <div class="row">
+            <div class="col-md-2 col-sm-6 col-xs-6 col-mob">
+                <app-knob title="Today's Visitors" model="knob1" field="value" colour="#f75353"></app-knob>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-6 col-mob">
+                <app-knob title="Today's Profit" model="knob2" field="value" colour="#32c8de"></app-knob>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-6 col-mob">
+                <app-knob title="Bounce Rate" model="knob3" field="value" colour="#51d466"></app-knob>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-6 col-mob">
+                <app-knob title="Total Members" model="knob4" field="value" colour="#cb79e6"></app-knob>
+            </div>
+            <div class="col-md-4">
+
+                <!-- Current status -->
+                <div class="current-status">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 col-xs-6">
+                            <!-- Current status item -->
+                            <div class="current-status-item">
+                                <!-- Icon
+                                <i class="fa fa-user lblue"></i> -->
+                                <!-- Heading -->
+                                <h6>Profit</h6>
+                                <h3>$50,000 <span class="fa fa-arrow-circle-up green"></span></h3>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-6">
+                            <!-- Current status item -->
+                            <div class="current-status-item">
+                                <!-- Icon
+                                <i class="fa fa-bar-chart-o lblue"></i> -->
+                                <!-- Heading -->
+                                <h6>Revenue</h6>
+                                <h3>55.89% <span class="fa fa-arrow-circle-down red"></span></h3>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <!-- Current status item -->
+                            <div class="current-status-item">
+                                <!-- Heading -->
+                                <h6>Customers</h6>
+                                <h3>11,000 <span class="fa fa-arrow-circle-up lblue"></span></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 col-xs-6">
+                            <!-- Current status item -->
+                            <div class="current-status-item">
+                                <!-- Icon
+                                <i class="fa fa-user lblue"></i> -->
+                                <!-- Heading -->
+                                <h6>Bounce Rate</h6>
+                                <h3>30.07% <span class="fa fa-arrow-circle-down lblue"></span></h3>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-6">
+                            <!-- Current status item -->
+                            <div class="current-status-item">
+                                <!-- Icon
+                                <i class="fa fa-bar-chart-o lblue"></i> -->
+                                <!-- Heading -->
+                                <h6>Visitors</h6>
+                                <h3>25,000 <span class="fa fa-arrow-circle-up green"></span></h3>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <!-- Current status item -->
+                            <div class="current-status-item">
+                                <!-- Heading -->
+                                <h6>Orders</h6>
+                                <h3>5,000 <span class="fa fa-arrow-circle-down red"></span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8">
+
+            <!-- Project widget -->
+            <app-projects projects="projects"></app-projects>
+
+        </div>
+
+        <div class="col-md-4">
+
+            <!-- Chat widget -->
+            <app-comments comments="comments"></app-comments>
+
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <!-- Vendors widget -->
+            <app-vendors vendors="vendors"></app-vendors>
+
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-8">
+
+            <!-- Timeline widget -->
+            <app-timeline title="Project name here" milestones="milestones"></app-timeline>
+
+        </div>
+
+        <div class="col-md-4">
+            <!-- Map widget -->
+            <app-map></app-map>
+        </div>
+
+    </div>
+
     <div class="row">
         <div class="col-md-8">
             <!-- Home chart widget -->
@@ -96,268 +221,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="knobs text-center">
-        <div class="row">
-            <div class="col-md-2 col-sm-6 col-xs-6 col-mob">
-                <app-knob title="Today's Visitors" model="knob1" field="value" colour="#f75353"></app-knob>
-            </div>
-            <div class="col-md-2 col-sm-6 col-xs-6 col-mob">
-                <app-knob title="Today's Profit" model="knob2" field="value" colour="#32c8de"></app-knob>
-            </div>
-            <div class="col-md-2 col-sm-6 col-xs-6 col-mob">
-                <app-knob title="Bounce Rate" model="knob3" field="value" colour="#51d466"></app-knob>
-            </div>
-            <div class="col-md-2 col-sm-6 col-xs-6 col-mob">
-                <app-knob title="Total Members" model="knob4" field="value" colour="#cb79e6"></app-knob>
-            </div>
-            <div class="col-md-4">
-
-                <!-- Current status -->
-                <div class="current-status">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-4 col-xs-6">
-                            <!-- Current status item -->
-                            <div class="current-status-item">
-                                <!-- Icon
-                                <i class="fa fa-user lblue"></i> -->
-                                <!-- Heading -->
-                                <h6>Profit</h6>
-                                <h3>$50,000 <span class="fa fa-arrow-circle-up green"></span></h3>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4 col-xs-6">
-                            <!-- Current status item -->
-                            <div class="current-status-item">
-                                <!-- Icon
-                                <i class="fa fa-bar-chart-o lblue"></i> -->
-                                <!-- Heading -->
-                                <h6>Revenue</h6>
-                                <h3>55.89% <span class="fa fa-arrow-circle-down red"></span></h3>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4 col-xs-12">
-                            <!-- Current status item -->
-                            <div class="current-status-item">
-                                <!-- Heading -->
-                                <h6>Customers</h6>
-                                <h3>11,000 <span class="fa fa-arrow-circle-up lblue"></span></h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4 col-sm-4 col-xs-6">
-                            <!-- Current status item -->
-                            <div class="current-status-item">
-                                <!-- Icon
-                                <i class="fa fa-user lblue"></i> -->
-                                <!-- Heading -->
-                                <h6>Bounce Rate</h6>
-                                <h3>30.07% <span class="fa fa-arrow-circle-down lblue"></span></h3>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4 col-xs-6">
-                            <!-- Current status item -->
-                            <div class="current-status-item">
-                                <!-- Icon
-                                <i class="fa fa-bar-chart-o lblue"></i> -->
-                                <!-- Heading -->
-                                <h6>Visitors</h6>
-                                <h3>25,000 <span class="fa fa-arrow-circle-up green"></span></h3>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4 col-xs-12">
-                            <!-- Current status item -->
-                            <div class="current-status-item">
-                                <!-- Heading -->
-                                <h6>Orders</h6>
-                                <h3>5,000 <span class="fa fa-arrow-circle-down red"></span></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="row">
-        <div class="col-md-8">
-
-            <!-- Project widget -->
-            <app-projects projects="projects"></app-projects>
-
-        </div>
-
-        <div class="col-md-4">
-
-            <!-- Chat widget -->
-            <app-comments comments="comments"></app-comments>
-
-        </div>
-
-    </div>
-
-    <div class="row">
-
-        <div class="col-md-8">
-
-            <!-- Timeline widget -->
-            <app-timeline title="Project name here" milestones="milestones"></app-timeline>
-
-        </div>
-
-    </div>
-
-    <div class="row">
-        <div class="col-md-12">
-            <!-- Map widget -->
-            <app-map></app-map>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-8">
-            <!-- Pages widget -->
-            <div class="widget pages-widget">
-
-                <div class="widget-head br-red">
-                    <h3><i class="fa fa-file"></i> Pages</h3>
-                </div>
-
-                <div class="widget-body no-padd">
-
-                    <div class="table-responsive">
-                        <table class="table table-bordered">
-                            <!-- Table heading -->
-                            <tr>
-                                <th><input type="checkbox"></th>
-                                <th>Page Title</th>
-                                <th>File Size</th>
-                                <th>Status</th>
-                                <th>Sort</th>
-                                <th>Action</th>
-                            </tr>
-                            <tr>
-                                <!-- Check box -->
-                                <td><input type="checkbox"></td>
-                                <!-- Page name -->
-                                <td><a href="#">About Us</a></td>
-                                <!-- Page size -->
-                                <td>253.4 KB</td>
-                                <!-- Status -->
-                                <td><span class="badge badge-danger">R</span></td>
-                                <!-- Sort -->
-                                <td><a href="#"><i class="fa fa-chevron-up green"></i></a></td>
-                                <!-- Actions -->
-                                <td>
-                                    <a href="#"><i class="fa fa-edit lblue"></i></a> &nbsp;
-                                    <a href="#"><i class="fa fa-share-square-o green"></i></a> &nbsp;
-                                    <a href="#"><i class="fa fa-trash-o red"></i></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td><a href="#">Contact Us</a></td>
-                                <td>213 KB</td>
-                                <td><span class="badge badge-success">A</span></td>
-                                <td><a href="#"><i class="fa fa-chevron-down red"></i></a></td>
-                                <td>
-                                    <a href="#"><i class="fa fa-edit lblue"></i></a> &nbsp;
-                                    <a href="#"><i class="fa fa-share-square-o green"></i></a> &nbsp;
-                                    <a href="#"><i class="fa fa-trash-o red"></i></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td><a href="#">Dashboard</a></td>
-                                <td>1.24 MB</td>
-                                <td><span class="badge badge-warning">P</span></td>
-                                <td><a href="#"><i class="fa fa-chevron-up green"></i></a></td>
-                                <td>
-                                    <a href="#"><i class="fa fa-edit lblue"></i></a> &nbsp;
-                                    <a href="#"><i class="fa fa-share-square-o green"></i></a> &nbsp;
-                                    <a href="#"><i class="fa fa-trash-o red"></i></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td><a href="#">Download</a></td>
-                                <td>30.00 MB</td>
-                                <td><span class="badge badge-danger">R</span></td>
-                                <td><a href="#"><i class="fa fa-chevron-down red"></i></a></td>
-                                <td>
-                                    <a href="#"><i class="fa fa-edit lblue"></i></a> &nbsp;
-                                    <a href="#"><i class="fa fa-share-square-o green"></i></a> &nbsp;
-                                    <a href="#"><i class="fa fa-trash-o red"></i></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td><a href="#">Portfolio</a></td>
-                                <td>140 MB</td>
-                                <td><span class="badge badge-success">A</span></td>
-                                <td><a href="#"><i class="fa fa-chevron-up green"></i></a></td>
-                                <td>
-                                    <a href="#"><i class="fa fa-edit lblue"></i></a> &nbsp;
-                                    <a href="#"><i class="fa fa-share-square-o green"></i></a> &nbsp;
-                                    <a href="#"><i class="fa fa-trash-o red"></i></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td><a href="#">Contact Us</a></td>
-                                <td>213 KB</td>
-                                <td><span class="badge badge-warning">P</span></td>
-                                <td><a href="#"><i class="fa fa-chevron-down red"></i></a></td>
-                                <td>
-                                    <a href="#"><i class="fa fa-edit lblue"></i></a> &nbsp;
-                                    <a href="#"><i class="fa fa-share-square-o green"></i></a> &nbsp;
-                                    <a href="#"><i class="fa fa-trash-o red"></i></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></td>
-                                <td><a href="#">Dashboard</a></td>
-                                <td>1.24 MB</td>
-                                <td><span class="badge badge-danger">R</span></td>
-                                <td><a href="#"><i class="fa fa-chevron-up green"></i></a></td>
-                                <td>
-                                    <a href="#"><i class="fa fa-edit lblue"></i></a> &nbsp;
-                                    <a href="#"><i class="fa fa-share-square-o green"></i></a> &nbsp;
-                                    <a href="#"><i class="fa fa-trash-o red"></i></a>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-
-                </div>
-
-                <div class="widget-foot">
-										<span class="pull-left">
-											<a href="#" class="btn btn-default btn-sm">Add New Page</a> &nbsp;
-											<a href="#" class="btn btn-danger btn-sm">Delete All</a>
-										</span>
-                    <div class="pull-right">
-                        <!-- Pagination -->
-                        <ul class="pagination">
-                            <li><a href="#">&laquo;</a></li>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">5</a></li>
-                            <li><a href="#">&raquo;</a></li>
-                        </ul>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-
             </div>
 
         </div>

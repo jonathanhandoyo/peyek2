@@ -112,37 +112,45 @@ angular.module('mainApp')
         /* ****************************************** */
         $scope.milestones = [
             {
+               id:1,
                date: 'Dec 01 2015',
                title: 'This project is launched',
                content: 'Lorem ipsum dolor sit amet consiquest dio',
                album: {
                    items: [
                        {
-                           src: 'http://thevectorlab.net/flatlab/img/sm-img-1.jpg'
+                           src: 'http://thevectorlab.net/flatlab/img/sm-img-1.jpg',
+                           thumb: 'http://thevectorlab.net/flatlab/img/sm-img-1.jpg'
                        },
                        {
-                           src: 'http://thevectorlab.net/flatlab/img/sm-img-2.jpg'
+                           src: 'http://thevectorlab.net/flatlab/img/sm-img-2.jpg',
+                           thumb: 'http://thevectorlab.net/flatlab/img/sm-img-2.jpg'
                        },
                        {
-                           src: 'http://thevectorlab.net/flatlab/img/sm-img-3.jpg'
+                           src: 'http://thevectorlab.net/flatlab/img/sm-img-3.jpg',
+                           thumb: 'http://thevectorlab.net/flatlab/img/sm-img-3.jpg'
                        }
                    ]
                }
             },
             {
+                id:2,
                 date: 'Dec 02 2015',
                 title: 'Project failure',
                 content: '<a href="#">Jonathan Handoyo</a> completes all the tasks <span><a href="#" class="blue">PARTY TIME</a></span>',
                 album: {
                     items: [
                         {
-                            src: 'http://thevectorlab.net/flatlab/img/sm-img-1.jpg'
+                            src: 'http://thevectorlab.net/flatlab/img/sm-img-1.jpg',
+                            thumb: 'http://thevectorlab.net/flatlab/img/sm-img-1.jpg'
                         },
                         {
-                            src: 'http://thevectorlab.net/flatlab/img/sm-img-2.jpg'
+                            src: 'http://thevectorlab.net/flatlab/img/sm-img-2.jpg',
+                            thumb: 'http://thevectorlab.net/flatlab/img/sm-img-2.jpg'
                         },
                         {
-                            src: 'http://thevectorlab.net/flatlab/img/sm-img-3.jpg'
+                            src: 'http://thevectorlab.net/flatlab/img/sm-img-3.jpg',
+                            thumb: 'http://thevectorlab.net/flatlab/img/sm-img-3.jpg'
                         }
                     ]
                 },
@@ -153,6 +161,7 @@ angular.module('mainApp')
                 ]
             },
             {
+                id:3,
                 date: 'Dec 03 2015',
                 title: 'Project successful',
                 content: 'Lorem ipsum dolor sit amet consiquest dio',
@@ -163,5 +172,38 @@ angular.module('mainApp')
                 ]
             }
         ];
+
+        $scope.vendors = [
+           {
+               name: 'Vendor 1',
+               contact: 'Contact of vendor 1',
+               admReq: true,
+               techReq: false,
+               score: '100',
+               remarks: 'Lorem ipsum dolor sit amet consiquest dio',
+               priceOri: '10,000,000',
+               priceAdj: '10,000,000'
+           },
+            {
+                name: 'Vendor 2',
+                contact: 'Contact of vendor 2',
+                admReq: true,
+                techReq: false,
+                score: '100',
+                remarks: 'Lorem ipsum dolor sit amet consiquest dio',
+                priceOri: '10,000,000',
+                priceAdj: '10,000,000'
+            },
+            {
+                name: 'Vendor 3',
+                contact: 'Contact of vendor 3',
+                admReq: true,
+                techReq: false,
+                score: '100',
+                remarks: 'Lorem ipsum dolor sit amet consiquest dio',
+                priceOri: '10,000,000',
+                priceAdj: '10,000,000'
+            }
+         ];
 
     });

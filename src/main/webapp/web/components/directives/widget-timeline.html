@@ -23,7 +23,7 @@
                             <div class="clearfix">
                                 <div ng-if="milestone.album && milestone.album.items" class="album">
                                     <a ng-repeat="item in milestone.album.items track by $index" ng-href="{{item.src}}" class="prettyphoto">
-                                        <img alt="" src="{{item.src}}" class="img-responsive" after-render="afterImageRendered">
+                                        <img alt="" src="{{item.thumb}}" class="img-responsive" after-render="afterImageRendered">
                                     </a>
                                 </div>
                             </div>

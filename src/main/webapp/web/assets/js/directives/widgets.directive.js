@@ -70,10 +70,10 @@ angular.module('mainApp')
     /* Timeline Widget */
     /*
     *
-    *
     * title: string
     * milestones:  [
     *   {
+    *       id: string
     *       date: string,
     *       title: string,
     *       content: richText,
@@ -81,6 +81,7 @@ angular.module('mainApp')
     *           items: [
     *               {
     *                   src: string
+    *                   thumb: string
     *               }
     *           ]
     *       },
@@ -102,9 +103,10 @@ angular.module('mainApp')
                 title: '@',
                 milestones: '='
             },
-            link: function(scope, element, attrs){
+            link: function(scope, element, attrs) {
                 scope.afterImageRendered = function (elm){
-                    jQuery('.prettyphoto').prettyPhoto({
+                    //TODO it might be a performance issue
+                    jQuery('.timeline .prettyphoto').prettyPhoto({
                         overlay_gallery: false, social_tools: false
                     });
                 };
@@ -121,6 +123,38 @@ angular.module('mainApp')
             templateUrl: 'components/directives/widget-map.html',
             scope: {
 
+            },
+            link: function(scope, element, attrs){
+
+            }
+        }
+    })
+
+    /* ****************************************** */
+    /* Vendors Widget */
+    /*
+    *
+    * vendors: [
+    *   {
+    *       name: string,
+    *       contact: string,
+    *       admReq: boolean,
+    *       techReq: boolean,
+    *       score: string,
+    *       remarks: string,
+    *       priceOri: string,
+    *       priceAdj: string
+    *   }
+    * ]
+    *
+    * */
+    /* ****************************************** */
+    .directive('appVendors', function() {
+        return {
+            restrict: 'E',
+            templateUrl: 'components/directives/widget-vendors.html',
+            scope: {
+                vendors: '='
             },
             link: function(scope, element, attrs){
 
